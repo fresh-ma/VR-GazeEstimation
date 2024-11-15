@@ -2,7 +2,7 @@
 
 这个repo由[pytorch_mpiigaze](https://github.com/hysts/pytorch_mpiigaze)衍生而来，旨在在[MPIIGaze](https://paperswithcode.com/dataset/mpiigaze)数据集上尝试各种backbone，分析对比各类方法的性能。**此repo仅用于学习用途。**
 
-同时，本repo也是 [JLU-张振花](https://ccst.jlu.edu.cn/info/1211/19225.htm) 老师开设的[《虚拟现实技术》]((https://ccst.jlu.edu.cn/info/1059/3361.htm))课程设计。
+同时，本repo也是 [JLU-张振花](https://ccst.jlu.edu.cn/info/1211/19225.htm) 老师开设的[《虚拟现实技术》](https://ccst.jlu.edu.cn/info/1059/3361.htm)课程设计。
 
 
 
