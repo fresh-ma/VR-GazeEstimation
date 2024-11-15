@@ -1,4 +1,4 @@
-This repo is derived from [pytorch_mpiigaze](https://github.com/hysts/pytorch_mpiigaze) and is designed to experiment with various backbones on the [MPIIGaze](https://paperswithcode.com/dataset/mpiigaze) dataset and analyze and compare performance. **This repo is for learning purposes only.**
+# An unofficial PyTorch implementation of MPIIGaze and MPIIFaceGaze
 
 这个repo由[pytorch_mpiigaze](https://github.com/hysts/pytorch_mpiigaze)衍生而来，旨在在[MPIIGaze](https://paperswithcode.com/dataset/mpiigaze)数据集上尝试各种backbone，分析对比各类方法的性能。**此repo仅用于学习用途。**
 
