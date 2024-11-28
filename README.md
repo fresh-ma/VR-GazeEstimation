@@ -27,19 +27,12 @@ pip install -r requirements.txt
 bash scripts/download_mpiigaze_dataset.sh
 ```
 
-### MPIIFaceGaze
-
-```bash
-bash scripts/download_mpiifacegaze_dataset.sh
-```
-
 
 
 ## 预处理 Preprocess
 
 ```
 python tools/preprocess_mpiigaze.py --dataset datasets/MPIIGaze -o datasets/
-python tools/preprocess_mpiifacegaze.py --dataset datasets/MPIIFaceGaze_normalized -o datasets/
 ```
 
 
@@ -48,23 +41,29 @@ python tools/preprocess_mpiifacegaze.py --dataset datasets/MPIIFaceGaze_normaliz
 
 本项目的参数整理在yaml中，并以模型-训练/测试名命。
 
+训练并测试一组交叉验证（leave one person for test）：
+
 ```bash
 python train.py --config configs/mpiigaze/lenet_train.yaml
 python evaluate.py --config configs/mpiigaze/lenet_eval.yaml
+```
+
+完成所有的训练和测试：
+
+```bash
+bash scripts/run_all_mpiigaze_lenet.sh
+bash scripts/run_all_mpiigaze_resnet_preact.sh
 ```
 
 
 
 ## 结果分析 Results Analysis
 
-（ToDo）
+![image-20241128204844315](assets/image-20241128204844315.png)
 
-### 
+![image-20241128204838256](assets/image-20241128204838256.png)
 
-|      |      |      |
-| :--- | :--: | ---: |
-|      |      |      |
-|      |      |      |
+由于精力限制，我们的GazeNet只训练了15个epoch（原论文为60个），这导致了一定程度上的性能下降（5.50 -> 5.98）
 
 
 
